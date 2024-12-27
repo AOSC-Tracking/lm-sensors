@@ -80,7 +80,7 @@ MANDIR := $(PREFIX)/man
 ARCH := $(firstword $(subst -, ,$(shell $(CC) -dumpmachine)))
 
 # Extra non-default programs to build; e.g., sensord
-#PROG_EXTRA := sensord
+PROG_EXTRA := sensord
 
 # Build and install static library
 BUILD_STATIC_LIB := 1
