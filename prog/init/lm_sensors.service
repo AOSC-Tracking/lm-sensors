@@ -2,7 +2,7 @@
 Description=Initialize hardware monitoring sensors
 
 [Service]
-EnvironmentFile=/etc/sysconfig/lm_sensors
+EnvironmentFile=/etc/conf.d/lm_sensors
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=-/sbin/modprobe -qab $BUS_MODULES $HWMON_MODULES
