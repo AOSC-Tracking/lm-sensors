@@ -13,7 +13,7 @@ ProtectKernelLogs=true
 ProtectControlGroups=true
 RestrictRealtime=true
 # end of automatic additions
-EnvironmentFile=/etc/sysconfig/sensord
+EnvironmentFile=/etc/conf.d/sensord
 Type=forking
 PIDFile=/run/sensord.pid
 ExecStart=/usr/sbin/sensord -i $INTERVAL -l $LOG_INTERVAL -f daemon $SENSORD_ARGS
